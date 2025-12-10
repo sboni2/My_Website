@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surendra | Portfolio</title>
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f8f9fa; color: #333; }
+
+    /* Navbar */
+    header { background: #222; color: #fff; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
+    nav a:hover { color: #ffd700; }
+
+    /* Hero */
+    .hero { height: 100vh; background: linear-gradient(to right, #4f46e5, #9333ea); color: #fff;
+      display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 1rem; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .btn { background: #fff; color: #4f46e5; padding: 10px 20px; margin: 0 5px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    .btn:hover { background: #ddd; }
+
+    /* Sections */
+    section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    section h2 { text-align: center; margin-bottom: 2rem; color: #4f46e5; font-size: 2rem; }
+
+    /* About */
+    #about { background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 2rem; }
+    #about p { text-align: center; max-width: 800px; margin: auto; font-size: 1.1rem; }
+
+    /* Skills */
+    #skills { background: #f0f4ff; }
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center; }
+    .skill { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold; transition: 0.3s; }
+    .skill:hover { background: #4f46e5; color: #fff; transform: translateY(-5px); }
+
+    /* Projects */
+    #projects { background: #fafafa; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .project { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+    .project:hover { transform: translateY(-5px); background: #f9f0ff; }
+    .project h3 { margin-bottom: 0.5rem; color: #9333ea; }
+    .project h3 a { text-decoration: none; color: #9333ea; }
+    .project h3 a:hover { text-decoration: underline; }
+
+    /* Internships */
+    #internships { background: #eefaf5; }
+    .internships { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .internship { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+    .internship:hover { background: #d1fae5; transform: translateY(-5px); }
+    .internship h3 { margin-bottom: 0.5rem; color: #4f46e5; }
+
+    /* Contact */
+    #contact { background: #f0f0f0; }
+    #contact p { text-align: center; margin-bottom: 1rem; font-size: 1.1rem; }
+    .contact-links { text-align: center; }
+    .contact-links a { margin: 0 10px; text-decoration: none; color: #4f46e5; font-weight: bold; }
+    .contact-links a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Surendra</h1>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hi, I'm Surendra</h1>
+    <p>Aspiring Developer | Machine Learning & Web Enthusiast | Problem Solver</p>
+    <div>
+      <a href="C:\Users\bonis\Downloads\Surendra_Resume.pdf" download><button class="btn">Download Resume</button></a>
+      <a href="#projects"><button class="btn">View Projects</button></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Surendra, a Computer Science and Engineering student at GITAM University with strong skills in programming, 
+      problem-solving, and machine learning. Through internships and projects, I’ve worked on AI, Web Development, and 
+      Data Science solutions — turning ideas into real-world applications.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">Data Science</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Tailwind CSS</div>
+      <div class="skill">Git/GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3><a href="https://github.com/sboni2/DS_Project.git" target="_blank">Housing Price Prediction</a></h3>
+        <p>ML model predicting house prices using regression techniques.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2/voice_assistant.git" target="_blank">Voice Assistant</a></h3>
+        <p>A personal AI-based voice assistant built in Python.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2/WeatherAPI.git" target="_blank">Weather API App</a></h3>
+        <p>Fetches real-time weather data using OpenWeather API.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2/Random_Password_Genrator.git" target="_blank">Random Password Generator</a></h3>
+        <p>Generates secure random passwords with customizable settings.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2" target="_blank">Mall Customer Segmentation</a></h3>
+        <p>Clustered customers with 3D visualization and Streamlit dashboard.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2" target="_blank">Employee Income Prediction</a></h3>
+        <p>ML project predicting salaries based on demographics & work history.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/sboni2" target="_blank">Image Recognition</a></h3>
+        <p>Deep learning-based image classifier using CNNs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="internships">
+      <div class="internship">
+        <h3>Bharat Intern</h3>
+        <p>Web Development Intern</p>
+      </div>
+      <div class="internship">
+        <h3>Prodigy InfoTech</h3>
+        <p>Machine Learning Intern</p>
+      </div>
+      <div class="internship">
+        <h3>Vault of Code</h3>
+        <p>AI & Prompt Engineering Intern</p>
+      </div>
+      <div class="internship">
+        <h3>Oasis Infobyte</h3>
+        <p>Python Development Intern</p>
+      </div>
+      <div class="internship">
+        <h3>BITS Pilani</h3>
+        <p>Data Science Intern</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! You can reach out via:</p>
+    <div class="contact-links">
+      <a href="mailto:sboni2@gitam.in">Email</a> |
+      <a href="https://github.com/sboni2" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/boni-surendra-0a7332257" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Surendra | Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
